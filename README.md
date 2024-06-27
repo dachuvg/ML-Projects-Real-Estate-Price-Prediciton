@@ -10,5 +10,5 @@ What all are the data that people may consider essential when looking to purchas
 ### Model
 Using techniques of data cleaning, standardizing and analytics, I trained the Linear regression model on the training data set to get an accuracy of around 85%. Then the pickle files for the prediction model and the json file containing the all the location names were exported.
 
-##Server
+### Server
 A Python Flask server is implemented and we use POST call to get the predicted price from the model we imported into the app.py file. We use GET call to retrieve all the location names from the json file. A predict function will jsonify the inputs and then pass them onto the POST call which will then give us the predicted price for the given inputs.
