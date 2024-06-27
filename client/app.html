@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>House Price Prediction</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <h1>DV HOUSE PRICE PREDICTOR</h1>
+        <form>
+            <h2>Area (in sqft)</h2>
+            <input type="text" class="area" id="sqft" placeholder="2000">
+            <h2>BHK</h2>
+            <div class="switch-field">
+                <input type="radio" id="bhk-1" name="bed" value="1"/>
+                <label for = "bhk-1">1</label>
+                <input type="radio" id="bhk-2" name="bed" value="2"/>
+                <label for = "bhk-2">2</label>
+                <input type="radio" id="bhk-3" name="bed" value="3" checked/>
+                <label for = "bhk-3">3</label>
+                <input type="radio" id="bhk-4" name="bed" value="4"/>
+                <label for = "bhk-4">4</label>
+                <input type="radio" id="bhk-5" name="bed" value="5"/>
+                <label for = "bhk-5">5</label>
+            </div>
+        </form>
+        <form>
+            <h2>Bathroooms</h2>
+            <div class="switch-field">
+                <input type="radio" id="bath-1" name="rdbtn" value="1"/>
+                <label for = "bath-1">1</label>
+                <input type="radio" id="bath-2" name="rdbtn" value="2"/>
+                <label for = "bath-2">2</label>
+                <input type="radio" id="bath-3" name="rdbtn" value="3"checked/>
+                <label for = "bath-3">3</label>
+                <input type="radio" id="bath-4" name="rdbtn" value="4"/>
+                <label for = "bath-4">4</label>
+                <input type="radio" id="bath-5" name="rdbtn" value="5"/>
+                <label for = "bath-5">5</label>
+            </div>
+        </form>
+        <div>
+            <h2>Location</h2>
+            <select id="dropdown" class="location">
+                <option value="" selected="selected" disabled="disabled">Choose a Location</option>
+            </select>
+        </div><br>
+        <button id="submit" onclick="estPrice()" type="button">Estimate Price</button><br>
+        <div id="cost"></div>
+    </body>
+</html>
